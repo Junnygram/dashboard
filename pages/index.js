@@ -1,3 +1,6 @@
+import BarChart from "@/components/Barchart";
+import RecentOrders from "@/components/RecentOrders";
+import TopCards from "@/components/TopCards";
 import Head from "next/head";
 import Header from "../components/Header";
 
@@ -13,6 +16,12 @@ export default function Home() {
       <main className="bg-gray-200">
         {" "}
         <Header />
+        <TopCards />
+        <div>
+          {" "}
+          <BarChart />
+          <RecentOrders />
+        </div>
       </main>
     </>
   );
